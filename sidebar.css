@@ -1,0 +1,70 @@
+
+/* reset css starts  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset css ends  */
+
+
+/* actual css starts  */
+
+/* sidebar css starts  */
+#sidebar_wrapper{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;   
+    overflow-x: hidden;
+    background: #2C3E50;
+    opacity: .9;
+}
+
+.sidebar_nav{
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar_nav li{
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar_nav li a{
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar_nav li a:hover{
+    background: #16A085;
+}
+
+/* sidebar css ends  */
+
+
+
+/* main content css starts  */
+#page_content_wrapper{
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    border: 5px solid green;
+}
+/* main content css ends  */
+
+
+
+/* toggling sidebar css starts  */
+#wrapper.menuDisplayed #sidebar_wrapper{
+    width: 250px;
+}
+
+#wrapper.menuDisplayed #page_content_wrapper{
+    padding-left: 250px;
+}
+/* toggling sidebar css ends  */
+
+/* actual css ends  */
+
